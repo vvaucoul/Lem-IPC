@@ -1,26 +1,26 @@
 # Lem-IPC
 
-- ![alt text](https://img.shields.io/badge/Note-121%2F100-lightgreen)
-- ![alt text](https://img.shields.io/badge/Dur%C3%A9e%20du%20projet-1%20semaine-orange)
-- ![alt text](https://img.shields.io/badge/XP-9450-red)
+The Lem-IPC project consists in creating a small game through processes.<br>
+By launching the same binary several times, several players then join a game and only the last team left wins !<br>
 
-### Projet
+## Usage
 
-Le projet Lem-IPC consiste a creer un petit jeu par le biais de processus.
-En lancant plusieurs fois le meme binaire, plusieurs joueurs rejoignent alors un jeu ou seul la derniere team en vie remporte la victoire !
-
-### Compilation
-
+- Clone Repository
 ```bash
-$ make
-$ make visualizer
-$ make processus
+git clone https://github.com/vvaucoul/Lem-IPC && cd Lem-IPC
 ```
 
-Vous obtenez alors 3 binaires.
-- lemipc : le binaire principal pour lancer le jeu
-- lemipc-visualizer : le binaire pour visualiser le jeu en temps reel créé avec la MLX
-- lemipc-processus : créer plusieurs processus pour le jeu
+- Compilation
+```bash
+make
+make processus
+make visualize
+```
+
+Then, you get 3 binaries.
+- lemipc: the main binary to launch the game
+- lemipc-visualizer: the binary to visualize the real-time game created with the MLX
+- lemipc-processu: creating multiple processes for the game
 
 ### Usage
 
@@ -44,14 +44,14 @@ Usage: ./lemipc [TEAM] [OPTIONS]...
     ./lemipc 1 --tts:8 --pts:4
 ```
 
-#### Usage classique:
+#### Basic usage
 
 ```bash
 ./lemipc 1 --pts:4
 ./lemipc-processus 3 2
 ```
 
-#### Usage avec le visualizer:
+#### Visualizer usage
 
 ```bash
 ./lemipc 1 --pts:4
@@ -59,7 +59,7 @@ Usage: ./lemipc [TEAM] [OPTIONS]...
 ./lemipc-processus 3 2
 ```
 
-#### Usage avec plein de processus:
+#### Multiple processus usage
 
 ```bash
 ./lemipc 1 --pts:200
@@ -68,7 +68,5 @@ Usage: ./lemipc [TEAM] [OPTIONS]...
 ```
 ### Visualizer
 
-![image](https://user-images.githubusercontent.com/66129673/177877518-87a63e85-a439-499c-aa92-0083b3b7fbd8.png)
+![Animation](https://user-images.githubusercontent.com/66129673/198732940-f11bcf33-b76b-4905-9ef5-323bc33d71be.gif)
 
-
-![image](https://user-images.githubusercontent.com/66129673/177877571-0b97e70e-83f1-4c1a-8d53-2a641daae655.png)
